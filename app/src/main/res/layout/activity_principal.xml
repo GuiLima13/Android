@@ -8,6 +8,7 @@
     tools:context=".activity.PrincipalActivity">
 
 
+    <include layout="@layout/fragment_principal" />
 
 
     <com.github.clans.fab.FloatingActionMenu
@@ -85,7 +86,6 @@
 
     </com.github.clans.fab.FloatingActionMenu>
 
-    <include layout="@layout/fragment_principal" />
 
 
 
