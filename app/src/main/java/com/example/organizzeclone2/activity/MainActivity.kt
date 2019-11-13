@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
-   // lateinit var  autenticacao : FirebaseAuth
+    lateinit var  autenticacao : FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onStart(){
         super.onStart()
 
-      // verificaUsuarioLogado()
+       verificaUsuarioLogado()
 
     }
 
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View) {
-/*
+
 
         if (v.id == btCadastro.id){
             startActivity( Intent(this,
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             )
         }
 
- */
+ 
 
 
 
@@ -58,18 +58,17 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
     fun abrirPrincipal(){
-       // startActivity(Intent(this, PrincipalActivity().javaClass))
-        //finish()
+        startActivity(Intent(this, PrincipalActivity().javaClass))
+        finish()
     }
 
     fun verificaUsuarioLogado(){
-/*
+
         autenticacao = FirebaseAuth.getInstance()
         //autenticacao.signOut()
         if (autenticacao.currentUser != null){
             abrirPrincipal()
         }
 
- */
     }
 }
